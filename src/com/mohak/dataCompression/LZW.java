@@ -29,6 +29,7 @@ public class LZW {
 			} else {
 				result.add(dictionary.get(tempString));
 				dictionary.put(tempString2, dictionarySize++);
+				System.out.println("Inserted " + tempString2 + " into the dictionary with id " + dictionarySize);
 				tempString = "" + c;
 			}
 		}
